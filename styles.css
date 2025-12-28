@@ -236,49 +236,72 @@ footer {
 </style>
 
 <body>
+<body>
 
-  <!-- HERO -->
-  <div class="hero">
+  <!-- PORTADA -->
+  <section class="hero">
     <img src="logo.png" alt="Mf Makis">
     <h1>Mf Makis</h1>
     <p>Un bocado y te conquista</p>
-    <a href="#menu" class="btn">Pedir ahora</a>
-  </div>
+    <a href="https://wa.me/977322646" class="btn">Pedir ahora</a>
+  </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section>
-    <div class="box">
+  <div class="container">
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="section">
       <h2>Sobre nosotros</h2>
       <p>
         En Mf Makis creamos makis premium con ingredientes frescos y técnicas artesanales,
         preparados al momento para ofrecer una experiencia moderna, delicada y llena de sabor.
-        Nos especializamos en delivery, cuidando cada detalle para que disfrutes calidad,
-        presentación y frescura directamente en tu hogar.
+        Nuestro enfoque en delivery garantiza que cada pedido llegue con la calidad, presentación
+        y frescura que nos caracteriza.
       </p>
-     <a href="https://wa.me/977322646" class="whatsapp">pedir ahora</a> 
-<a href="#menu" class="btn">Hacer pedido</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- NUESTRO MENÚ -->
-  <section id="menu">
-    <div class="box">
-      <h2>Nuestro Menú</h2>
+    <!-- NUESTRO MENÚ -->
+    <section class="section">
+      <h2>Nuestro menú</h2>
       <p>
-        Nuestro menú ha sido cuidadosamente diseñado para ofrecer una experiencia gastronómica
-        única. Cada maki combina ingredientes frescos de alta calidad con técnicas artesanales
-        y un equilibrio perfecto de sabores. Fusionamos clásicos japoneses con creaciones
-        exclusivas, preparadas al momento para garantizar textura, frescura y una presentación
-        impecable. Nuestro enfoque en delivery nos permite llevarte makis premium,
-        llenos de sabor y con una experiencia moderna desde el primer bocado hasta el último.
+        Nuestro menú ha sido cuidadosamente diseñado para combinar clásicos japoneses con
+        creaciones exclusivas. Cada maki es preparado al momento, equilibrando sabores,
+        texturas y presentación, para que disfrutes una experiencia premium desde la comodidad
+        de tu hogar.
       </p>
-      <a href="menu.pdf" class="btn" target="_blank">Ver menú PDF</a>
-    </div>
-  </section>
+
+      <div class="menu-items">
+        <div class="menu-card">
+          <h3>Maki Clásico</h3>
+          <span>S/ 20.00</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Maki Especial</h3>
+          <span>S/ 35.00</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Maki Veggie</h3>
+          <span>S/ 25.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIDOS -->
+    <section class="section">
+      <h2>Pedidos online</h2>
+      <p>Haz tu pedido fácil y rápido, y recíbelo donde estés.</p>
+      <br>
+      <a href="https://wa.me/977322646" class="btn">Hacer pedido</a>
+    </section>
+
+  </div>
 
   <footer>
-    © 2025 Mf Makis · Delivery Premium
+    © 2025 Mf Makis · Todos los derechos reservados
   </footer>
+
+</body>
 
 </body>
 
