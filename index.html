@@ -2,68 +2,76 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>MF Makis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MF Makis</title>
 
   <!-- ESTILOS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
   <!-- HERO -->
-  <section class="hero">
+  <header class="hero">
     <img src="logo.png" alt="MF Makis" class="logo">
 
     <h1>Makis Premium</h1>
     <p>Frescura, sabor y presentación directa a tu hogar</p>
 
-    <button class="btn-principal">
-      Pedir ahora
+    <a href="#menu" class="btn-principal">
       <span class="palitos"></span>
-    </button>
-  </section>
+      Pedir ahora
+    </a>
+  </header>
 
   <!-- SOBRE NOSOTROS -->
-  <section class="seccion">
+  <section class="sobre">
     <h2>Sobre nosotros</h2>
     <p>
-      En MF Makis creamos makis premium con ingredientes frescos y técnicas artesanales.
-      Cada pedido se prepara al momento para ofrecer una experiencia moderna, delicada
-      y llena de sabor.
+      En MF Makis creamos makis premium con ingredientes frescos y técnicas
+      artesanales. Cada pedido se prepara al momento para brindarte una
+      experiencia moderna, deliciosa y llena de sabor.
     </p>
   </section>
 
   <!-- MENU -->
-  <section class="menu">
-    <div class="card">
-      <h3>Maki Clásico</h3>
-      <p>Palta, pepino y salmón</p>
-      <span>$40</span>
-      <button class="btn-secundario">
-        Ordenar
-        <span class="palitos"></span>
-      </button>
-    </div>
+  <section id="menu" class="menu">
+    <h2>Nuestro Menú</h2>
 
-    <div class="card destacado">
-      <h3>Maki Especial</h3>
-      <p>Queso crema, langostino y salsa especial</p>
-      <span>$55</span>
-      <button class="btn-secundario">
-        Ordenar
-        <span class="palitos"></span>
-      </button>
-    </div>
+    <div class="cards">
 
-    <div class="card">
-      <h3>Maki Veggie</h3>
-      <p>Palta, zanahoria y pepino</p>
-      <span>$20</span>
-      <button class="btn-secundario">
-        Ordenar
-        <span class="palitos"></span>
-      </button>
+      <div class="card">
+        <h3>Maki Clásico</h3>
+        <p>Palta, pepino y salmón</p>
+        <span class="precio">$40</span>
+
+        <button class="btn-card">
+          <span class="palitos"></span>
+          Ordenar
+        </button>
+      </div>
+
+      <div class="card destacada">
+        <h3>Maki Especial</h3>
+        <p>Queso crema, langostino y salsa especial</p>
+        <span class="precio">$55</span>
+
+        <button class="btn-card">
+          <span class="palitos"></span>
+          Ordenar
+        </button>
+      </div>
+
+      <div class="card">
+        <h3>Maki Veggie</h3>
+        <p>Palta, zanahoria y pepino</p>
+        <span class="precio">$20</span>
+
+        <button class="btn-card">
+          <span class="palitos"></span>
+          Ordenar
+        </button>
+      </div>
+
     </div>
   </section>
 
