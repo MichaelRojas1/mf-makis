@@ -317,6 +317,26 @@ body {
 }
 </style>
 <body>
+<div class="combos">
+
+  <div class="combo-card">
+    <img src="maki1.jpg">
+    <h3>Combo 24 Makis</h3>
+    <p>Variedades a elección</p>
+    <div class="precio">S/ 72.00</div>
+    <button class="boton-ordenar">Ordenar</button>
+  </div>
+
+  <div class="combo-card">
+    <img src="maki2.jpg">
+    <h3>Combo Especial</h3>
+    <p>Makis premium</p>
+    <div class="precio">S/ 95.00</div>
+    <button class="boton-ordenar">Ordenar</button>
+  </div>
+
+</div>
+
 <div class="hero">
  <img src="logo.png" alt="MF Makis">
   <h1>Mf Makis</h1>
