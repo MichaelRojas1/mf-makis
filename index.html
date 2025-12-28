@@ -78,7 +78,37 @@ p {
 .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(255,0,102,0.6);
+}/* ===== TARJETAS DEL MENÚ ===== */
+.menu-card {
+  background: #fff3e8;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
+
+/* TÍTULO DEL MAKI */
+.menu-card h3 {
+  color: #2b1a12; /* marrón oscuro elegante */
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPCIÓN (ANTES BLANCA) */
+.menu-card p {
+  color: #5a3a2e; /* café suave */
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* PRECIO */
+.menu-card .price {
+  color: #ff3d57; /* rosado fuerte */
+  font-size: 20px;
+  font-weight: bold;
+}
+
 </style>
 
 </head>
@@ -220,11 +250,11 @@ h2 {
             <span>$40.00</span>
         </div>
 
-        <div class="menu-item">
-            <img src="maki2.jpg" alt="Maki Especial">
-            <h3>Maki Especial</h3>
-            <p>Queso crema, langostino y salsa especial</p>
-            <span>$55.00</span>
+       <div class="menu-card">
+  <h3>Maki Especial</h3>
+  <p>Queso crema, langostino y salsa especial</p>
+  <div class="price">$55.00</div>
+
         </div>
 
         <div class="menu-item">
