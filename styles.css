@@ -1,4 +1,11 @@
 <style>
+:root {
+  --mf-rosa: #ff4f8b;
+  --mf-naranja: #ff7a18;
+  --mf-claro: #fff4ee;
+  --mf-oscuro: #2b2b2b;
+}
+
 /* RESET BÁSICO */
 * {
   margin: 0;
@@ -38,6 +45,28 @@ body {
 }
 
 /* CONTENEDOR GENERAL */
+.menu-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.menu-card {
+  background: var(--mf-claro);
+  width: 300px;
+  border-radius: 28px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -91,6 +120,17 @@ body {
 }
 
 /* TITULOS */
+.menu-card h3 {
+  color: var(--mf-naranja);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  color: #444;
+  font-size: 15px;
+}
+
 .section h2 {
   color: #ff7a18;
   margin-bottom: 15px;
@@ -103,6 +143,13 @@ body {
 }
 
 /* MENU */
+.menu-precio {
+  color: var(--mf-rosa);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -126,6 +173,20 @@ body {
   color: #ff4d6d;
 }
 /* BOTÓN */
+.btn-ordenar {
+  background: linear-gradient(45deg, var(--mf-rosa), var(--mf-naranja));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
 .btn {
   background: linear-gradient(90deg, #ff0055, #ff7a18);
   color: #fff;
@@ -178,6 +239,37 @@ body {
   <h1>Mf Makis</h1>
   <p>Un bocado y te conquista</p>
   <a href="#" class="btn">Pedir ahora</a>
+</div>
+<button class="btn-ordenar">
+  Ordenar
+  <span class="palitos">➜</span>
+</button>
+.palitos {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-ordenar:hover .palitos {
+  transform: rotate(90deg);
+}
+
+.btn-ordenar:hover .palitos::before,
+.btn-ordenar:hover .palitos::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 3px;
+  background: white;
+  margin: 0 2px;
+}
+<div class="menu-card">
+  <h3>Maki Especial</h3>
+  <p>Queso crema, langostino y salsa MF</p>
+  <div class="menu-precio">$55.00</div>
+  <button class="btn-ordenar">
+    Ordenar
+    <span class="palitos">➜</span>
+  </button>
 </div>
 
  <div class="section">
