@@ -1,8 +1,11 @@
 body {
+   body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff4e6;
-    color: #5a2a00;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff8fa3, #ff9f43);
+    color: #4a1f00;
+}
+
 }
 
 .hero {
