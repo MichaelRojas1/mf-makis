@@ -267,3 +267,7 @@ section {
 .btn-menu:hover {
   transform: scale(1.05);
 }
+body {
+    background: linear-gradient(135deg, #ff7a8a, #ff9f43);
+    color: #4a1c1c;
+}
