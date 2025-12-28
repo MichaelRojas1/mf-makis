@@ -1,4 +1,87 @@
 <style>
+/* ====== FONDO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff4d8d, #ff7a18);
+}
+
+/* ====== CONTENEDOR DE COMBOS ====== */
+.combos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* ====== TARJETA COMBO ====== */
+.combo-card {
+  background: #fff5ee;
+  width: 280px;
+  border-radius: 30px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* EFECTO HOVER */
+.combo-card:hover {
+  transform: translateY(-15px);
+  background: #ff4d8d;
+  color: white;
+}
+
+/* ====== IMAGEN ====== */
+.combo-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ====== TITULO ====== */
+.combo-card h3 {
+  margin: 15px 0 10px;
+}
+
+/* ====== PRECIO ====== */
+.precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4d8d;
+}
+
+.combo-card:hover .precio {
+  color: white;
+}
+
+/* ====== BOTÓN ====== */
+.boton-ordenar {
+  margin-top: 15px;
+  background: #ff7a18;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* ====== PALITOS CHINOS (FLECHA) ====== */
+.boton-ordenar::after {
+  content: "🥢";
+  margin-left: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* ANIMACIÓN AL PASAR EL MOUSE */
+.combo-card:hover .boton-ordenar::after {
+  transform: rotate(20deg) scale(1.2);
+}
+
 :root {
   --mf-rosa: #ff4f8b;
   --mf-naranja: #ff7a18;
