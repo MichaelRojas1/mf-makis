@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff4e6;
+    color: #5a2a00;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #ff9a3c, #ff6a00);
+    color: white;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    margin: 10px 0 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8b1e00;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #8b1e00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
