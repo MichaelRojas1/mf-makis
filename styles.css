@@ -1,4 +1,23 @@
 <style>
+.sobre-nosotros {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sobre-nosotros h2 {
+  color: #ff7a00; /* naranja MF */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 /* ====== FONDO GENERAL ====== */
 body {
   margin: 0;
