@@ -1,9 +1,66 @@
 body {
    body {
+    body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ff8fa3, #ff9f43);
-    color: #4a1f00;
+    background: linear-gradient(135deg, #ff7aa2, #ff9f43);
+    color: #4a1d2f;
+}
+
+/* Contenedor general */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #8b1e3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #5e1028;
+    transform: scale(1.05);
+}
+
+/* Tarjetas (menú) */
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin: 15px;
+}
+
+/* Animación suave */
+.fade-in {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 }
 
 }
