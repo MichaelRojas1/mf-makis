@@ -270,7 +270,12 @@ footer {
         texturas y presentación, para que disfrutes una experiencia premium desde la comodidad
         de tu hogar.
       </p>
-
+ <!-- PAGO ONLINE -->
+    <div class="card">
+      <h2>Pedidos online</h2>
+      <p>Paga fácil y rápido desde tu celular.</p>
+      <a href="https://link.mercadopago.com.pe/mfmakis" class="btn">Pagar online</a>
+    </div>
       <div class="menu-items">
         <div class="menu-card">
           <h3>Maki Clásico</h3>
