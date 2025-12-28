@@ -63,7 +63,30 @@
 .btn-pedido:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-   </head>
+   .menu-section {
+  width: 100%;
+  background: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container {
+  max-width: 900px;
+  text-align: center;
+}
+
+.menu-container h2 {
+  color: #ff7a00;
+  margin-bottom: 20px;
+}
+
+.menu-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+</head>
 }
 body {
    body {
