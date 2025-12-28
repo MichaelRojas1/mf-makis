@@ -12,17 +12,22 @@
 <body>
 
   <!-- HERO / PORTADA -->
-  <header class="hero">
-    <img src="LOGO.PNG.png" alt="MF Makis Logo" class="logo">
+<header class="hero">
+  <img src="LOGO.PNG.png" alt="MF Makis Logo" class="logo">
 
-    <h1>Makis Premium</h1>
-    <p>Frescura, sabor y presentación directa a tu hogar</p>
+  <h1>Makis Premium</h1>
+  <p>Frescura, sabor y presentación directa a tu hogar</p>
 
-    <a href="#menu" class="btn-principal">
-      Hacer pedido
-      <span class="palitos"></span>
-    </a>
-  </header>
+  <a href="#menu" class="btn-principal">
+    Hacer pedido
+    <span class="palitos"></span>
+  </a>
+
+  <a https://link.mercadopago.com.pe/mfmakis class="btn-pago">
+    💳 Pagar online
+  </a>
+</header>
+
 
   <!-- SOBRE NOSOTROS -->
   <section class="sobre">
@@ -81,6 +86,36 @@
 >
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
+<a https://link.mercadopago.com.pe/mfmakis class="btn-pago">Pagar online</a>
+/* ================= BOTÓN DE PAGO ================= */
+
+.btn-pago {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  animation: pulso 2.2s infinite;
+}
+
+.btn-pago:hover {
+  background: #fff;
+  color: #ff4d00;
+  transform: translateY(-4px);
+}
+
+/* ANIMACIÓN */
+@keyframes pulso {
+  0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
+  70% { box-shadow: 0 0 0 12px rgba(255,255,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
 
 </body>
 </html>
