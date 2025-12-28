@@ -386,3 +386,41 @@ body {
     padding: 11px 22px;
   }
 }
+/* BOTÓN PAGO ONLINE */
+.btn-pago {
+  margin-top: 12px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #00b1ea;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  animation: pulse 1.6s infinite;
+  box-shadow: 0 0 0 rgba(0,177,234,0.7);
+}
+
+/* ANIMACIÓN PULSO */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0,177,234,0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(0,177,234,0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0,177,234,0);
+  }
+}
+
+/* HOVER */
+.btn-pago:hover {
+  background: #0090c5;
+  transform: scale(1.1);
+}
