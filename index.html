@@ -292,4 +292,32 @@ h2 {
 </a>
  <a href="menu.pdf" target="_blank" class="btn">
   Ver menú
+   <style>
+.btn {
+  display: inline-block;
+  margin: 12px;              /* separación entre botones */
+  padding: 14px 28px;
+  background: linear-gradient(45deg, #ff6a88, #ff914d);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efecto movimiento */
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+</style>
+<div class="botones">
+  <a class="btn" href="#">ver menú</a>
+  <a class="btn" href="#">Pago online</a>
+  .botones {
+  margin-top: 30px;
+}
+
+</div>
+
 </html>
