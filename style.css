@@ -59,8 +59,6 @@ body {
 /* =========================
    BOTÓN PRINCIPAL
 ========================= */
-
-.btn-principal {
 .btn-principal {
   display: inline-flex;
   align-items: center;
