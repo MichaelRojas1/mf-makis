@@ -193,3 +193,17 @@ section {
     border-radius: 30px;
     text-decoration: none;
 }
+.btn-menu {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn-menu:hover {
+  transform: scale(1.05);
+}
