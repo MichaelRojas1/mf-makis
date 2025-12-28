@@ -1,3 +1,51 @@
+<head> 
+/* SOBRE NOSOTROS */
+#sobre-nosotros {
+  background: linear-gradient(135deg, #ffb6c1, #ff9966);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-box {
+  background: white;
+  max-width: 900px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.sobre-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.sobre-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* BOTÓN */
+.btn-pedido {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6600, #ff3366);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-pedido:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+   </head>
+}
 body {
    body {
     body {
