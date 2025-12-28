@@ -375,14 +375,16 @@ body {
   </button>
 </div>
 
- <div class="section">
-    <h2>Sobre nosotros</h2>
+ <section class="section="Sobre nosotros">
+<h2>Sobre nosotros</h2>
+   
     <p>
       En Mf Makis creamos makis premium con ingredientes frescos y técnicas artesanales,
       preparados al momento para ofrecer una experiencia moderna, delicada y llena de sabor.
       Nuestro enfoque en delivery nos permite llevar cada pedido con la máxima calidad,
       cuidando presentación y frescura directamente hasta tu hogar.
     </p>
+</section>
   </div>
 
  <div class="section">
