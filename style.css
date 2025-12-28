@@ -149,3 +149,46 @@ body {
 .btn-card:hover {
   background: var(--rosa);
 }
+/* ====== HERO (SECCIÓN DEL LOGO) ====== */
+.hero {
+  min-height: 70vh;   /* antes seguramente estaba en 100vh */
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo */
+.hero img {
+  max-width: 120px;   /* controla el tamaño del logo */
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh; /* en celular sí ocupa toda la pantalla */
+    padding: 40px 15px;
+  }
+
+  .hero img {
+    max-width: 90px; /* un poco más pequeño en móvil */
+  }
+}
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
