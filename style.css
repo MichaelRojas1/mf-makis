@@ -283,21 +283,29 @@ body {
 }
 /* ================= WHATSAPP FLOTANTE ================= */
 
-.whatsapp-float {
+.whatsapp-fijo {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background: #25d366;
+  bottom: 18px;
+  right: 18px;
+  width: 48px;          /* 🔹 tamaño reducido */
+  height: 48px;
+  background: #25D366;
+  color: #fff;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  justify-content: center;
+  font-size: 24px;      /* 🔹 icono más chico */
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   z-index: 999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
+
+.whatsapp-fijo:hover {
+  transform: scale(1.1);
+}
+
 
 .whatsapp-float img {
   width: 32px;
