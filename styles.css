@@ -147,3 +147,49 @@ section {
         transform: translateY(0);
     }
 }
+.menu {
+    background-color: #fff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    background: #fff6e8;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #8b1e00;
+}
+
+.btn-menu {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #8b1e00;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
