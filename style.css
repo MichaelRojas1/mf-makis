@@ -1,0 +1,144 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== COLORES MF ===== */
+:root {
+  --naranja: #ff7a00;
+  --rosado: #ff4d6d;
+  --claro: #fff6f0;
+  --oscuro: #2b2b2b;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(180deg, var(--naranja), var(--rosado));
+  color: white;
+  text-align: center;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  opacity: 0.9;
+}
+
+/* ===== BOTONES ===== */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-principal,
+.btn-secundario {
+  position: relative;
+  background: white;
+  color: var(--oscuro);
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-principal:hover,
+.btn-secundario:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== PALITOS CHINOS ===== */
+.palitos {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: var(--rosado);
+  transform: rotate(45deg);
+}
+
+.palitos::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: var(--rosado);
+  top: 6px;
+  left: 4px;
+}
+
+/* ===== SECCIONES ===== */
+.seccion {
+  background: var(--claro);
+  color: var(--oscuro);
+  padding: 60px 20px;
+}
+
+.seccion h2 {
+  color: var(--naranja);
+  margin-bottom: 20px;
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: grid;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.card {
+  background: white;
+  color: var(--oscuro);
+  padding: 30px;
+  border-radius: 25px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card span {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.3rem;
+  color: var(--rosado);
+}
+
+.destacado {
+  background: linear-gradient(135deg, var(--naranja), var(--rosado));
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+}
