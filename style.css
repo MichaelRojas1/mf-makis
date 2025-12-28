@@ -424,3 +424,46 @@ body {
   background: #0090c5;
   transform: scale(1.1);
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255,255,255,0.4);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255,255,255,0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255,255,255,0.4);
+  }
+}
+.btn-principal {
+  background: #ffffff;
+  color: #ff7a18;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  animation: pulse 1.8s infinite;
+  transition: transform 0.3s ease;
+}
+  .btn-pago {
+  margin-top: 14px;
+  background: linear-gradient(135deg, #00c853, #00e676);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  animation: pulse 1.4s infinite;
+}
+
+.btn-principal:hover,
+.btn-pago:hover {
+  transform: scale(1.12);
+}
