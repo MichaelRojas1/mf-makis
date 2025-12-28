@@ -281,6 +281,39 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.hero-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Botón pago */
+.btn-pago {
+  background: #ffffff;
+  color: #ff6a00;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #ff6a00;
+  transition: all 0.3s ease;
+}
+
+.btn-pago:hover {
+  background: #ff6a00;
+  color: white;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .btn-principal,
+  .btn-pago {
+    width: 85%;
+    text-align: center;
+  }
+}
+
 /* ================= WHATSAPP FLOTANTE ================= */
 
 .whatsapp-fijo {
