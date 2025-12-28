@@ -1,418 +1,71 @@
 <!DOCTYPE html>
-<html <link rel="stylesheet" href="styles.css">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MF Makis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head><style>
-:root{
-  --mf-naranja: #ff7a00;
-  --mf-rosa: #ff4f8b;
-  --mf-oscuro: #1a1a1a;
-  --mf-claro: #fff3ec;
-}
-body{
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, var(--mf-naranja), var(--mf-rosa));
-  color: white;
-}
-section{
-  max-width: 1200px;
-  margin: auto;
-  padding: 80px 20px;
-  text-align: center;
-}
-.menu{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-.card{
-  background: var(--mf-claro);
-  color: #333;
-  border-radius: 25px;
-  padding: 30px;
-  box-shadow: 0 15px 40px rgba(0,0,0,.25);
-  transition: transform .4s, box-shadow .4s;
-  position: relative;
-}
-
-.card:hover{
-  transform: translateY(-15px);
-  box-shadow: 0 25px 60px rgba(0,0,0,.4);
-}
-.precio{
-  color: var(--mf-rosa);
-  font-size: 22px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-.btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 14px 30px;
-  background: linear-gradient(45deg, var(--mf-naranja), var(--mf-rosa));
-  color: white;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all .4s;
-  overflow: hidden;
-}
-
-.btn:hover{
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(255,79,139,.8);
-}
-<a href="#" class="btn">
-  Ordenar
-  <span class="palitos"></span>
-</a>
-.palitos{
-  width: 22px;
-  height: 22px;
-  position: relative;
-}
-
-.palitos::before,
-.palitos::after{
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 22px;
-  background: white;
-  border-radius: 2px;
-  transition: transform .4s;
-}
-
-.palitos::before{
-  transform: rotate(0deg);
-}
-
-.palitos::after{
-  transform: rotate(0deg) translateX(6px);
-}
-
-/* AL PASAR EL MOUSE */
-.btn:hover .palitos::before{
-  transform: rotate(45deg);
-}
-
-.btn:hover .palitos::after{
-  transform: rotate(-45deg) translateX(6px);
-}
-
-</style>
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
-/* FONDO GENERAL */
-body {
-  background: linear-gradient(180deg, #ff8c1a, #ffb3a7);
-  color: #ffffff;
-  text-align: center;
-}
-
-/* CONTENEDOR GENERAL */
-.section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-/* LOGO */
-.logo {
-  width: 260px;
-  margin-bottom: 20px;
-}
-
-/* TITULOS */
-h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #ff3d00;
-}
-
-/* TEXTOS */
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 30px;
-  color: #ffffff;
-}
-
-/* CAJA BLANCA PREMIUM */
-.card {
-  background: #ffffff;
-  color: #333;
-  border-radius: 20px;
-  padding: 40px;
-  margin: 40px auto;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-}
-
-/* BOTONES */
-.btn {
-  display: inline-block;
-  padding: 14px 30px;
-  background: linear-gradient(135deg, #ff3d00, #ff0066);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 40px;
-  font-size: 18px;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* ANIMACIÓN BOTÓN */
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 25px rgba(255,0,102,0.6);
-}/* ===== TARJETAS DEL MENÚ ===== */
-.menu-card {
-  background: #fff3e8;
-  border-radius: 20px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-/* TÍTULO DEL MAKI */
-.menu-card h3 {
-  color: #2b1a12; /* marrón oscuro elegante */
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-/* DESCRIPCIÓN (ANTES BLANCA) */
-.menu-card p {
-  color: #5a3a2e; /* café suave */
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-/* PRECIO */
-.menu-card .price {
-  color: #ff3d57; /* rosado fuerte */
-  font-size: 20px;
-  font-weight: bold;
-}
-
-</style>
-
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="style.css">
 </head>
- <style>
-  body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(180deg, #ff9a9e, #ff7a18);
-  color: #333;
-}
 
-/* HERO */
-.hero {
-  background: linear-gradient(180deg, #ff8a00, #ff6a00);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-/* SECCIONES */
-.section {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-/* TARJETA BLANCA PREMIUM */
-.card {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-  text-align: center;
-}
-
-/* TITULOS */
-h2 {
-  color: #ff6a00;
-  margin-bottom: 20px;
-}
-
-/* BOTONES */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: linear-gradient(90deg, #ff6a00, #ff3d81);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-</style>
-
-</head>
-</html>
-
-</head>
-    <meta charset="UTF-8">
-    <title>Mf Makis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
 
-    <header class="hero">
-        <img src="LOGO.PNG.png" alt="Mf Makis Logo" class="logo">
-      <style>
-/* LOGO PRINCIPAL */
-<img src="LOGO.PNG.png" alt="Mf Makis Logo" class="logo">
-        .logo {
-  width: 380px;
-        /* tamaño grande */
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <img src="logo.png" alt="MF Makis" class="logo">
 
-/* efecto elegante al pasar el mouse */
-.logo:hover {
-  transform: scale(1.08);
-}
-</style>
+    <h1>Makis Premium</h1>
+    <p>Frescura, sabor y presentación directa a tu hogar</p>
 
-        <h1>Mf Makis</h1>
-        <p class="slogan">Un bocado y te conquista</p>
-        <a href="https://wa.me/51977322646" class="btn">pedir ahora</a>
-    </header>
+    <button class="btn-principal">
+      Pedir ahora
+      <span class="palitos"></span>
+    </button>
+  </section>
 
-   <section id="sobre-nosotros">
-  <section class="menu-section">
-  <div class="menu-container">
+  <!-- SOBRE NOSOTROS -->
+  <section class="seccion">
     <h2>Sobre nosotros</h2>
     <p>
-      En Mf Makis creamos makis premium con ingredientes frescos y técnicas artesanales,
-      preparados al momento para ofrecer una experiencia moderna, delicada y llena de sabor.
-      Nos especializamos en delivery, cuidando cada detalle para que disfrutes calidad y
-      presentación directamente en tu hogar.
+      En MF Makis creamos makis premium con ingredientes frescos y técnicas artesanales.
+      Cada pedido se prepara al momento para ofrecer una experiencia moderna, delicada
+      y llena de sabor.
     </p>
-   
-  </div>
-</section>
-  
+  </section>
 
-       <section class="menu"><section class="menu">
-    <h2>Nuestro Menú</h2>
-    <p>
-     Nuestro menú ha sido cuidadosamente diseñado para ofrecer una experiencia gastronómica única
-     donde cada maki combina ingredientes frescos de alta calida con técnicas artesanales y un equilibrio
-     perfecto de sabores. Fusionamos clásicos japoneses con creaciones exclusivas, pensadas para sorprender 
-     desde el primer bocado hasta el último. Cada pieza es preparada al momento, cuidando la textura, presentación y
-     frescura, para que disfrutes de un producto premium en la comodidad de tu hogar. Nuestro enfoque en delivery 
-     nos permite llevarte makis impecables,llenos de sabor y con una presentación que mantiene la esencia 
-     de nuestra cocina, garantizando una experiencia moderna, deliciosa y memorable en cada pedido.
-    </p>
-</section>
-
-  <h2>Pedidos online</h2>
-  <a href="https://wa.me/51977322646" class="btn">Hacer pedido</a>
-</section>
-
-        <p>
-            En <strong>Mf Makis</strong> creamos makis frescos y deliciosos,
-            preparados con pasión para conquistarte en cada bocado.
-        </p>
-    </section>
-<section id="menu" class="menu">
-    <h2>Nuestro Menú</h2>
-
-    <div class="menu-grid">
-
-        <div class="menu-card">
-            <img src="maki1.jpg" alt="Maki Clásico">
-            <h3>Maki Clásico</h3>
-            <p>Palta, pepino y salmón</p>
-           <div class="price">$30.00</div>
-        </div>
-
-       <div class="menu-card">
-       <img src="maki3.jpg" alt="Maki especial">
-  <h3>Maki Especial</h3>
-  <p>Queso crema, langostino y salsa especial</p>
-  <div class="price">$55.00</div>
-
-        </div>
-
-        <div class="menu-card">
-            <img src="maki3.jpg" alt="Maki Veggie">
-            <h3>Maki Veggie</h3>
-            <p>Palta, zanahoria y pepino</p>
-          <div class="price">$55.00</div>
-        </div>
-
+  <!-- MENU -->
+  <section class="menu">
+    <div class="card">
+      <h3>Maki Clásico</h3>
+      <p>Palta, pepino y salmón</p>
+      <span>$40</span>
+      <button class="btn-secundario">
+        Ordenar
+        <span class="palitos"></span>
+      </button>
     </div>
-    
-</section>
 
-    <footer class="footer">
-        <p>© 2026 Mf Makis</p>
+    <div class="card destacado">
+      <h3>Maki Especial</h3>
+      <p>Queso crema, langostino y salsa especial</p>
+      <span>$55</span>
+      <button class="btn-secundario">
+        Ordenar
+        <span class="palitos"></span>
+      </button>
+    </div>
 
-  
-</a>
-</section>
-  </footer>
-<a href="https://wa.me/+51977322646" class="whatsapp" target="_blank">
-  📲
+    <div class="card">
+      <h3>Maki Veggie</h3>
+      <p>Palta, zanahoria y pepino</p>
+      <span>$20</span>
+      <button class="btn-secundario">
+        Ordenar
+        <span class="palitos"></span>
+      </button>
+    </div>
+  </section>
 
-  
-</a>
 </body>
-</a>
- <a href="menu.pdf" target="_blank" class="btn">
-  Ver menú
-   <style>
-.btn {
-  display: inline-block;
-  margin: 12px;              /* separación entre botones */
-  padding: 14px 28px;
-  background: linear-gradient(45deg, #ff6a88, #ff914d);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* efecto movimiento */
-.btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-</style>
-
-   <a href="https://link.mercadopago.com.pe/mfmakis" target="_blank" class="btn"> 💳 pago online </a>
-   
-
-</div>
-
 </html>
