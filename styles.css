@@ -107,3 +107,43 @@ section {
     transform: translateY(0);
   }
 }
+.menu {
+    padding: 60px;
+    background: #fff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.item {
+    background: #fff6e8;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 12px;
+}
+section {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
