@@ -619,3 +619,89 @@ body {
     font-size: 2rem;
   }
 }
+.menu {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #ff7a18, #ff4d6d);
+  text-align: center;
+}
+
+.menu h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  width: 100%;
+  max-height: 170px;   /* 🔥 AQUÍ ESTÁ LA SOLUCIÓN */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.precio {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ff7a18;
+}
+.btn-card {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ff7a18;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.btn-card:hover {
+  background: #ff4d6d;
+  letter-spacing: 2px;
+}
+
+.btn-card::after {
+  content: " 🥢";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-card:hover::after {
+  opacity: 1;
+}
+.card.destacado {
+  background: #ffb703;
+  color: #000;
+}
+@media (max-width: 600px) {
+  .card img {
+    max-height: 140px;
+  }
+}
