@@ -774,3 +774,107 @@ body {
 .cat.active::after {
   width: 100%;
 }
+/* ===== MENU SLIDER TIPO EDO ===== */
+
+.menu-slider {
+  background: #111;
+  padding: 80px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.slider-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.slide {
+  min-width: 260px;
+  height: 420px;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.slide span {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5c400;
+  letter-spacing: 2px;
+}
+
+/* Hover efecto pro */
+.slide:hover {
+  transform: scale(1.05);
+}
+
+.slide:hover img {
+  filter: brightness(0.85);
+  transform: scale(1.1);
+}
+
+/* Indicador inferior */
+.slider-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.slider-indicator span {
+  width: 40px;
+  height: 3px;
+  background: #444;
+}
+
+.slider-indicator .active {
+  background: #f5c400;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-title {
+    font-size: 28px;
+  }
+
+  .slide {
+    min-width: 220px;
+    height: 360px;
+  }
+
+  .slide span {
+    font-size: 18px;
+  }
+}
