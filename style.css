@@ -705,3 +705,72 @@ body {
     max-height: 140px;
   }
 }
+/* ============================
+   CATEGORÍAS DESLIZABLES
+============================ */
+.categorias {
+  background: #0e0e0e;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.categorias-scroll {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+}
+
+/* Ocultar scroll feo */
+.categorias-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.categorias-scroll::-webkit-scrollbar-thumb {
+  background: #ff7a18;
+  border-radius: 10px;
+}
+
+.cat {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 5px;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  transition: color 0.3s ease;
+}
+
+.cat:hover {
+  color: #fff;
+}
+
+/* Línea inferior */
+.cat::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #ff7a18;
+  transition: 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.cat:hover::after {
+  width: 60%;
+}
+
+/* Categoría activa */
+.cat.active {
+  color: #ff7a18;
+}
+
+.cat.active::after {
+  width: 100%;
+}
