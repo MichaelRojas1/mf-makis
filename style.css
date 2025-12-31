@@ -939,3 +939,83 @@ body {
   color: #ffcc00;
   letter-spacing: 1px;
 }
+/* ===== MENU TIPO EDO ===== */
+
+.menu {
+  padding: 80px 0;
+  background: #111;
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 20px 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.menu-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.menu-scroll::-webkit-scrollbar-thumb {
+  background: #ff9800;
+  border-radius: 10px;
+}
+
+.menu-card {
+  min-width: 260px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform 0.4s ease;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%);
+}
+
+.menu-name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ffc107;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .menu-title {
+    font-size: 26px;
+  }
+
+  .menu-card {
+    min-width: 220px;
+    height: 320px;
+  }
+}
