@@ -952,6 +952,26 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
+.menu-categorias {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.menu-categorias img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.menu-categorias img:hover {
+  transform: scale(1.05);
+}
 
 .menu-scroll {
   display: flex;
