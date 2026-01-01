@@ -191,3 +191,26 @@ section h2 {
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
+.categoria {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.categoria a {
+  flex: 0 0 auto;
+}
+
+.categoria img {
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
