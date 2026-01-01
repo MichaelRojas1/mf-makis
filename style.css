@@ -14,13 +14,15 @@ body {
 .hero {
     width: 100%;
     min-height: 90vh;
-    background: linear-gradient(135deg, #ff8a00, #ff2d75);
+    background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 40px 20px;
+}
+
 }
 .hero .logo {
     width: 170px;
