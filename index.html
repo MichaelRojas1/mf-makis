@@ -156,6 +156,14 @@
 <a href="https://wa.me/977322646" class="whatsapp-btn" target="_blank">
     <img src="img/whatsapp-icon.png" alt="WhatsApp">
 </a>
+<script>
+  function mostrarMenu(id) {
+    const menus = document.querySelectorAll('.menu-box');
+    menus.forEach(menu => menu.classList.remove('activo'));
+
+    document.getElementById(id).classList.add('activo');
+  }
+</script>
 
 </body>
 </html>
