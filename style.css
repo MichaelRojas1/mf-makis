@@ -1194,3 +1194,32 @@ body {
   text-shadow: 0 3px 10px rgba(0,0,0,0.8);
   font-family: 'Arial Black', sans-serif;
 }
+.menu-categorias {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.menu-categorias::-webkit-scrollbar {
+  height: 6px;
+}
+
+.menu-categorias::-webkit-scrollbar-thumb {
+  background: #f5c542;
+  border-radius: 10px;
+}
+.menu-categorias img {
+  width: 280px;      /* tamaño fijo en PC */
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .menu-categorias img {
+    width: 220px;
+    height: 300px;
+  }
+}
