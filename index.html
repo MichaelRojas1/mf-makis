@@ -4,155 +4,61 @@
     <meta charset="UTF-8">
     <title>MF Makis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
-<!-- FAVORITOS (tipo Edo) -->
-<section id="favoritos" class="fav-section">
-    <h2>Nuestros Favoritos</h2>
-    <div class="cards">
-        <div class="card">
-           <img src="img/makis.jpg" alt="Makis Premium">
-            <h3>Makis Premium</h3>
-            <p>S/. 40</p>
-        </div>
-        <div class="card">
-            <img src="img/combos.jpg" alt="Combo Especial">
-            <h3>Combo Especial</h3>
-            <p>S/. 85</p>
-        </div>
-        <div class="card">
-            <img src="img/nigiri.jpg" alt="Nigiri Selección">
-            <h3>Nigiri Selección</h3>
-            <p>S/. 28</p>
-        </div>
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-overlay">
+        <img src="img/logo.png" class="logo" alt="MF Makis">
+        <a href="#menu" class="btn-principal">Hacer Pedido</a>
     </div>
-</section>
-<!-- CATEGORÍAS DESLIZABLES -->
-<section class="categorias">
-  <div class="categoria" onclick="mostrarMenu('makis')">
-    <img src="img/makis.jpg" alt="Makis">
-    <span>Makis</span>
-  </div>
+</header>
 
-  <div class="categoria" onclick="mostrarMenu('combos')">
-    <img src="img/combos.jpg" alt="Combos">
-    <span>Combos</span>
-  </div>
+<!-- CATEGORÍAS -->
+<section id="menu" class="categorias">
+    <h2>Nuestro Menú</h2>
 
-  <div class="categoria" onclick="mostrarMenu('nigiri')">
-    <img src="img/nigiri.jpg" alt="Nigiri">
-    <span>Nigiri</span>
-  </div>
-</section>
-<!-- CONTENIDO DEL MENÚ -->
-<section class="menu-contenido">
+    <div class="slider">
 
-  <div id="makis" class="menu-box activo">
-    <h2>Makis Especiales</h2>
-    <p>Makis frescos, rellenos premium y sabores intensos.</p>
-    <ul>
-      <li>🔥 Maki Acevichado – S/ 28</li>
-      <li>🔥 Maki Furai – S/ 30</li>
-      <li>🔥 Maki MF Especial – S/ 34</li>
-    </ul>
-  </div>
+        <a href="makis.html" target="_blank" class="card">
+            <img src="img/makis.jpg">
+            <span>Makis</span>
+        </a>
 
-  <div id="combos" class="menu-box">
-    <h2>Combos MF</h2>
-    <p>Perfectos para compartir.</p>
-    <ul>
-      <li>🍱 Combo 1 (24 piezas) – S/ 45</li>
-      <li>🍱 Combo 2 (36 piezas) – S/ 65</li>
-    </ul>
-  </div>
+        <a href="combos.html" target="_blank" class="card">
+            <img src="img/combos.jpg">
+            <span>Combos</span>
+        </a>
 
-  <div id="nigiri" class="menu-box">
-    <h2>Nigiri</h2>
-    <p>Clásicos japoneses preparados al momento.</p>
-    <ul>
-      <li>🍣 Salmón – S/ 18</li>
-      <li>🍣 Langostino – S/ 20</li>
-    </ul>
-  </div>
+        <a href="nigiri.html" target="_blank" class="card">
+            <img src="img/nigiri.jpg">
+            <span>Nigiri</span>
+        </a>
 
-</section>
+        <a href="gunkan.html" target="_blank" class="card">
+            <img src="img/gunkan.jpg">
+            <span>Gunkan</span>
+        </a>
 
-<!-- CATEGORÍAS DESLIZABLES -->
-<section class="categorias">
-    <h2>Navega por nuestras categorías</h2>
-    <div class="menu-categorias">
-        <div class="item-cat">
-           <a href="img/nigiri.jpg" target="_blank">
-    <img src="img/nigiri.jpg" alt="Nigiri">
-  </a>
-        </div>
-        <div class="item-cat">
-            <a href="img/gunkan.jpg" target="_blank">
-    <img src="img/gunkan.jpg" alt="Gunkan">
-  </a>
+        <a href="tiraditos.html" target="_blank" class="card">
+            <img src="img/tiraditos.jpg">
+            <span>Tiraditos</span>
+        </a>
 
-        </div>
-        <div class="item-cat">
-            <a href="img/tiraditos.jpg" target="_blank">
-    <img src="img/tiraditos.jpg" alt="Tiraditos">
-  </a>
-        </div>
-        <div class="item-cat">
-            <a href="img/makis.jpg" target="_blank">
-  <img src="img/makis.jpg" alt="Makis">
-</a>
-    
-        </div>
-        <div class="item-cat">
-            <a href="img/combos.jpg" target="_blank">
-    <img src="img/combos.jpg" alt="Combos">
-  </a>
-        </div>
     </div>
+
+    <a href="menu.pdf" target="_blank" class="btn-secundario">Ver Menú PDF</a>
 </section>
 
-<!-- MENÚ COMPLETO -->
-<section id="menu" class="menu-section">
-    <h2>Menú Completo</h2>
-    <div class="cards menu-cards">
-        <!-- Ejemplo de item menú -->
-        <div class="card">
-            <img src="img/makis.jpg" alt="Maki Clásico">
-            <h3>Maki Clásico</h3>
-            <p>Palta, pepino y salmón</p>
-            <p class="precio">S/. 40</p>
-        </div>
-        <div class="card">
-            <img src="img/combos.jpg" alt="Combo Dúo">
-            <h3>Combo Dúo</h3>
-            <p>24 makis + 2 bebidas</p>
-            <p class="precio">S/. 72</p>
-        </div>
-        <!-- Agrega más items según tu carta -->
-    </div>
-</section>
-
-<!-- BOTÓN PDF -->
-<a href="pdf/menu-mf-makis.pdf" target="_blank" class="btn-menu">
-  Ver menú PDF
-</a>
-
-
-<!-- WHATSAPP FIJO -->
-<a href="https://wa.me/977322646" class="whatsapp-btn" target="_blank">
-    <img src="img/whatsapp-icon.png" alt="WhatsApp">
-</a>
-<script>
-  function mostrarMenu(id) {
-    const menus = document.querySelectorAll('.menu-box');
-    menus.forEach(menu => menu.classList.remove('activo'));
-
-    document.getElementById(id).classList.add('activo');
-  }
-</script>
+<!-- WHATSAPP -->
+<a href="https://wa.me/977322646" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
