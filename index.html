@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>MF Makis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>MF Makis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <img src="img/logo.png" class="logo" alt="MF Makis">
-  <a href="https://wa.me/51999999999" class="btn-main">Hacer Pedido</a>
+<!-- HERO / HEADER -->
+<header class="hero">
+    <img src="img/logo.png" class="logo" alt="MF Makis">
+    <h1>MF Makis Premium</h1>
+    <p>Frescura, sabor y presentación directa a tu hogar</p>
+
+    <div class="hero-buttons">
+        <a href="#favoritos" class="btn-principal">Nuestros favoritos</a>
+        <a href="#menu" class="btn-secundario">Ver menú completo</a>
+    </div>
 </header>
 
-<section>
-  <h2>Nuestro Menú</h2>
-
-  <div class="categorias">
-
-    <div class="categoria">
-      <img src="img/nigiri.jpg">
-      <span>Nigiri</span>
+<!-- FAVORITOS (tipo Edo) -->
+<section id="favoritos" class="fav-section">
+    <h2>Nuestros Favoritos</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="img/makis.jpg" alt="Makis Premium">
+            <h3>Makis Premium</h3>
+            <p>S/. 40</p>
+        </div>
+        <div class="card">
+            <img src="img/combos.jpg" alt="Combo Especial">
+            <h3>Combo Especial</h3>
+            <p>S/. 85</p>
+        </div>
+        <div class="card">
+            <img src="img/nigiri.jpg" alt="Nigiri Selección">
+            <h3>Nigiri Selección</h3>
+            <p>S/. 28</p>
+        </div>
     </div>
-
-    <div class="categoria">
-      <img src="img/gunkan.jpg">
-      <span>Gunkan</span>
-    </div>
-
-    <div class="categoria">
-      <img src="img/tiraditos.jpg">
-      <span>Tiraditos</span>
-    </div>
-
-    <div class="categoria">
-      <img src="img/makis.jpg">
-      <span>Makis</span>
-    </div>
-
-    <div class="categoria">
-      <img src="img/combos.jpg">
-      <span>Combos</span>
-    </div>
-
-  </div>
 </section>
 
-<section style="text-align:center;">
-  <a href="menu.pdf" target="_blank" class="btn-main">Ver Menú PDF</a>
+<!-- CATEGORÍAS DESLIZABLES -->
+<section class="categorias">
+    <h2>Navega por nuestras categorías</h2>
+    <div class="menu-categorias">
+        <div class="item-cat">
+            <img src="img/nigiri.jpg" alt="Nigiri">
+            <span>Nigiri</span>
+        </div>
+        <div class="item-cat">
+            <img src="img/gunkan.jpg" alt="Gunkan">
+            <span>Gunkan</span>
+        </div>
+        <div class="item-cat">
+            <img src="img/tiraditos.jpg" alt="Tiraditos">
+            <span>Tiraditos</span>
+        </div>
+        <div class="item-cat">
+            <img src="img/makis.jpg" alt="Makis">
+            <span>Makis</span>
+        </div>
+        <div class="item-cat">
+            <img src="img/combos.jpg" alt="Combos">
+            <span>Combos</span>
+        </div>
+    </div>
 </section>
 
-<a href="https://wa.me/977322646">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp">
+<!-- MENÚ COMPLETO -->
+<section id="menu" class="menu-section">
+    <h2>Menú Completo</h2>
+    <div class="cards menu-cards">
+        <!-- Ejemplo de item menú -->
+        <div class="card">
+            <img src="img/makis.jpg" alt="Maki Clásico">
+            <h3>Maki Clásico</h3>
+            <p>Palta, pepino y salmón</p>
+            <p class="precio">S/. 40</p>
+        </div>
+        <div class="card">
+            <img src="img/combos.jpg" alt="Combo Dúo">
+            <h3>Combo Dúo</h3>
+            <p>24 makis + 2 bebidas</p>
+            <p class="precio">S/. 72</p>
+        </div>
+        <!-- Agrega más items según tu carta -->
+    </div>
+</section>
+
+<!-- BOTÓN PDF -->
+<a href="mf-makis-menu.pdf" class="btn-pdf" target="_blank">Ver menú PDF</a>
+
+<!-- WHATSAPP FIJO -->
+<a href="https://wa.me/977322646" class="whatsapp-btn" target="_blank">
+    <img src="img/whatsapp-icon.png" alt="WhatsApp">
 </a>
 
 </body>
