@@ -33,8 +33,10 @@ body {
     color: white;
 }
 .hero p {
-    color: #fff;
+    color: #dcdcdc;
     margin: 10px;
+}
+
 }
 .hero-buttons {
     margin-top: 18px;
@@ -58,8 +60,10 @@ body {
     transform: translateY(-3px);
 }
 .btn-secundario {
-    background: #ff4d00;
+    background: linear-gradient(135deg, #ff8a00, #ff2d75);
     color: #fff;
+}
+
 }
 .btn-secundario:hover {
     background: #ff2d75;
@@ -84,12 +88,13 @@ body {
 }
 .cards .card {
     width: 250px;
-    background: white;
+    background: #1c1c1c;
     border-radius: 14px;
     padding: 16px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
     transition: 0.3s ease;
 }
+
 .cards .card img {
     width: 100%;
     border-radius: 12px;
@@ -135,6 +140,10 @@ body {
     margin-top: 6px;
     display: block;
 }
+.cards .card h3,
+.cards .card p {
+    color: #f5f5f5;
+}
 
 /* WHATSAPP BOTÓN */
 .whatsapp-btn {
@@ -146,4 +155,13 @@ body {
 }
 .whatsapp-btn img {
     width: 100%;
+}
+/* FONDO GENERAL OSCURO */
+section {
+    background: #111;
+    color: #f1f1f1;
+}
+
+section h2 {
+    color: #ff8a00;
 }
